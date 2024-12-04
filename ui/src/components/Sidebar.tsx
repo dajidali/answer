@@ -23,6 +23,9 @@ const Sidebar: React.FC = () => {
                 <Nav.Link as={Link} to="/settings" active={location.pathname === "/settings"}>
                     Settings
                 </Nav.Link>
+                <Nav.Link as={Link} to="/user" active={location.pathname === "/user"}>
+                    User
+                </Nav.Link>
             </Nav>
         </div>
     );

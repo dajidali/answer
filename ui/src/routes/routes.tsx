@@ -5,6 +5,7 @@ import Dashboard from "../pages/Dashboard";
 import About from "../pages/About";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settings";
+import User from "../pages/Users";
 
 const routes: RouteObject[] = [
     {
@@ -21,6 +22,7 @@ const routes: RouteObject[] = [
             },
             { path: "about", element: <About /> },
             { path: "settings", element: <Settings /> },
+            { path: "user", element: <User /> }
         ],
     },
 ];
