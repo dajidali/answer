@@ -19,7 +19,7 @@ export const createUser = async (user: { name: string; age: number }) => {
 };
 
 export const updateUser = async (id: number, user: { name: string; age: number }) => {
-    const response = await fetch(`${API_URL}?id=${id}`, {
+    const response = await fetch(`${API_URL}/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user),
@@ -28,5 +28,5 @@ export const updateUser = async (id: number, user: { name: string; age: number }
 };
 
 export const deleteUser = async (id: number) => {
-    await fetch(`${API_URL}?id=${id}`, { method: "DELETE" });
+    await fetch(`${API_URL}/${id}`, { method: "DELETE" });
 };
